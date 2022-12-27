@@ -1,0 +1,96 @@
+git --version
+
+This will return the version of Git that you're running and look something like this:
+
+//(Any version 1.7.10 or higher is fine.)
+
+//Next, configure Git so it knows who to associate your changes to:
+Set your name:
+git config --global user.name "protocol42"
+
+Now set your email:
+git config --global user.email "jhull@protocolrescue.com"
+
+//done 
+npm install -g git-it
+
+// open git-it - go to repository
+git-it
+
+// create project folder
+mkdir hello-world
+
+//To go into that folder:
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+
+
+//To create a new Git instance for a project:
+git init
+
+
+That's it! It will just return you to a new line. If you want to be double-sure that it's a Git repository, type 
+
+git status
+
+//create local git repository
+// mkdir - enter dir - check git status
+mkdir hello-world;cd hello-world;git init;git status
+
+
+// commit to git repository
+// write text to file - git add file - git commit added files
+echo 'test text'>>README.txt;git add README.txt;git commit -m 'test file'
+
+// return changes made to file
+git diff
+
+
+// add git hub user name to git config 
+git config --global user.username protocol42
+
+
+// add remote server address to local machine 
+1.get http from new repository on git hub
+https://github.com/protocol42/hello-world.git
+
+2. shuve http up into ' git remote add origin <URLFROMGITHUB> '
+
+git remote add origin https://github.com/protocol42/hello-world.git
+
+//Your local repository now knows where your remote one named 'origin' lives on GitHub's servers.
+
+// push
+git push origin master
+
+
+git remote add origin https://github.com/protocol42/hello-world.git
+git branch -M main
+git push -u origin main
+
+git remote add origin git@github.com:protocol42/hello-world.git
+git branch -M main
+git push -u origin main
+
+git-it verify
+
+
+
+echo "# hello-world" >> README.md
+git init;git add README.md
+git commit -m "first commit";git branch -M main
+git remote add origin https://github.com/protocol42/hello-world.git;
+git push -u origin main
+
+
+
+echo "# hello-world" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/protocol42/hello-world.git
+git push -u origin main
+
+
+
